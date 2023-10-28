@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Fidaki</title>
+    <link rel="stylesheet" href="myStyle.css" />
+    <link rel="stylesheet" href="menu.css" />
+
+    <script src="initBoard.js"></script>
+    <script src="games.js"></script>
+    <script src="dice.js"></script>
+  </head>
+  <body onload="initBoard()" onload="">
+    <table id="mainTable"></table>
+    <br />
+    <button class="dice" id="dice" onclick="movePawn()">Click to Roll</button>
+    <div class="container">
+      <ul id="menu">
+        <li><a id="menuItem1">Player: 0</a></li>
+        <li><a id="menuItem2">Dice: 0</a></li>
+        <li><a id="menuItem3">Pass: false</a></li>
+        <li><a id="menuItem4">Next_Player: 1</a></li>
+      </ul>
+    </div>
+    <script src="games.js" defer></script>
+  </body>
+</html>
