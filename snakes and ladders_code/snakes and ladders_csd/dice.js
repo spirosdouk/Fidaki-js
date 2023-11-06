@@ -11,6 +11,8 @@ function movePawn() {
   if (check == 0 && check2 == 0) {
     var rolledNumber = rollDice();
     var newPosition;
+    updateDiceImage(rolledNumber);
+
     if (getPlayerTurn() == 1) {
       newPosition = currentPosition + rolledNumber;
     } else {
@@ -58,6 +60,35 @@ function rollDice() {
 }
 function SeptDice() {
   return Math.floor(Math.floor(Math.random() * 11));
+}
+function updateDiceImage(rolledNumber) {
+  const diceImage = document.getElementById("diceImage");
+  let imagePath;
+
+  switch (rolledNumber) {
+    case 1:
+      imagePath = "ImagesDice/one.png";
+      break;
+    case 2:
+      imagePath = "ImagesDice/two.png";
+      break;
+    case 3:
+      imagePath = "ImagesDice/three.png";
+      break;
+    case 4:
+      imagePath = "ImagesDice/four.png";
+      break;
+    case 5:
+      imagePath = "ImagesDice/five.png";
+      break;
+    case 6:
+      imagePath = "ImagesDice/six.png";
+      break;
+    default:
+      imagePath = "ImagesDice/default.png"; // Provide a default image for unknown numbers
+  }
+
+  diceImage.src = imagePath;
 }
 function UpdateImgs(currentPositionnn, newPosition) {
   var Pls_eukola_8emata;

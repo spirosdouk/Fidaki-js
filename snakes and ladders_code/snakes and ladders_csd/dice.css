@@ -1,11 +1,22 @@
-.dice {
-  width: 100px;
-  height: 100px;
+.small-dice {
+  width: 150px; /* Adjust the width as needed */
+  height: 150px; /* Adjust the height as needed */
   background-color: white;
   border: 2px solid black;
   text-align: center;
   font-size: 24px;
-  font-weight: bold;
   cursor: pointer;
   user-select: none;
+}
+button.dice {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  text-align: center;
+}
+
+button.dice img {
+  display: block; /* Remove any extra space around the image */
 }
