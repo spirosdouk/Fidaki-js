@@ -4,12 +4,13 @@
     <title>Fidaki</title>
     <link rel="stylesheet" href="myStyle.css" />
     <link rel="stylesheet" href="menu.css" />
-
     <script src="initBoard.js"></script>
     <script src="games.js"></script>
     <script src="dice.js"></script>
+    <script src="Menu.js"></script>
+    <script src="First_turn.js"></script>
   </head>
-  <body onload="initBoard()" onload="">
+  <body onload="initBoard()">
     <table id="mainTable"></table>
     <br />
     <button class="dice" id="dice" onclick="movePawn()">Click to Roll</button>
@@ -21,6 +22,5 @@
         <li><a id="menuItem4">Next_Player: 1</a></li>
       </ul>
     </div>
-    <script src="games.js" defer></script>
   </body>
 </html>

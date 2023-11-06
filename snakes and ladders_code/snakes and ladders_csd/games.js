@@ -1,3 +1,5 @@
+var cells;
+
 function setPositions() {
   var positions = [];
   var snakePositions = [13, 38, 46, 73, 82, 89];
@@ -13,11 +15,14 @@ function setPositions() {
     "54 or 84",
     "40 or 90",
   ];
-
+  positions[0] = new Object();
+  positions[0].from = 0;
   for (var i = 1; i <= 90; i++) {
     positions[i] = new Object();
     positions[i].from = i;
+    // positions[i].to = i;
 
+    positions[i].playercount = 0;
     if (snakePositions.indexOf(i) != -1) {
       positions[i].to = snakeNewPositions[snakePositions.indexOf(i)];
       positions[i].type = "Snake";
@@ -45,7 +50,9 @@ function setPositions() {
   return positions;
 }
 
-var cells = setPositions();
+// Call the setPositions function after the page is fully loaded
+
+cells = setPositions();
 for (var i = 1; i <= 90; i++) {
   console.log(
     "Cell: " +
