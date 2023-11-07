@@ -2,17 +2,27 @@
 <html>
   <head>
     <title>Fidaki</title>
-    <link rel="stylesheet" href="myStyle.css" />
-    <link rel="stylesheet" href="menu.css" />
-    <link rel="stylesheet" href="dice.css" />
+    <link rel="stylesheet" type="text/css" href="css/myStyle.css" />
+    <link rel="stylesheet" type="text/css" href="css/menu.css" />
+    <link rel="stylesheet" type="text/css" href="css/dice.css" />
 
-    <script src="initBoard.js"></script>
-    <script src="games.js"></script>
-    <script src="dice.js"></script>
-    <script src="Menu.js"></script>
-    <script src="First_turn.js"></script>
+    <script src="js/initBoard.js"></script>
+    <script src="js/games.js"></script>
+    <script src="js/dice.js"></script>
+    <script src="js/Menu.js"></script>
+    <script src="js/First_turn.js"></script>
   </head>
+
   <body onload="initBoard()">
+    <button class="dice" id="dice" onclick="movePawn()">
+      Click to Roll
+      <img
+        id="diceImage"
+        class="small-dice"
+        src="ImagesDice/six.png"
+        alt="Dice Image"
+      />
+    </button>
     <table id="mainTable"></table>
     <br />
 
@@ -24,14 +34,5 @@
         <li><a id="menuItem4">Next_Player: 1</a></li>
       </ul>
     </div>
-    <button class="dice" id="dice" onclick="movePawn()">
-      Click to Roll
-      <img
-        id="diceImage"
-        class="small-dice"
-        src="ImagesDice/six.png"
-        alt="Dice Image"
-      />
-    </button>
   </body>
 </html>

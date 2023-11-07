@@ -21,3 +21,11 @@ td {
 img {
   display: block;
 }
+
+#menu {
+  color: white;
+}
+
+#menu a {
+  color: white;
+}

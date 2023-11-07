@@ -1,6 +1,6 @@
 .small-dice {
-  width: 150px; /* Adjust the width as needed */
-  height: 150px; /* Adjust the height as needed */
+  width: 150px;
+  height: 150px;
   background-color: white;
   border: 2px solid black;
   text-align: center;
@@ -18,5 +18,5 @@ button.dice {
 }
 
 button.dice img {
-  display: block; /* Remove any extra space around the image */
+  display: block;
 }
