@@ -112,9 +112,9 @@ function UpdateImgs(currentPositionnn, newPosition) {
     );
     if (Pls_eukola_8emata > 4) {
       cells[newPosition].type = "Ladders";
-      console.log("allagh se skala");
+      console.log("PERASA");
     } else {
-      console.log("allagh se Snake");
+      console.log("KOPIKA");
       cells[newPosition].type = "Snake";
     }
     snake_or_ladder = 1;
@@ -199,13 +199,9 @@ function UpdateImgs(currentPositionnn, newPosition) {
     cells[newPosition].type === "Ladders" ||
     cells[newPosition].type === "Snake or Ladders"
   ) {
-    console.log("ladder h fidi o mpro");
-
     cells[cells[newPosition].to].playercount++;
     cells[currentPositionnn].playercount--;
   } else {
-    console.log("o mpro kanonikos");
-
     cells[newPosition].playercount++;
     cells[currentPositionnn].playercount--;
   }

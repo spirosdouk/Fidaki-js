@@ -20,7 +20,6 @@ function setPositions() {
   for (var i = 1; i <= 90; i++) {
     positions[i] = new Object();
     positions[i].from = i;
-    // positions[i].to = i;
 
     positions[i].playercount = 0;
     if (snakePositions.indexOf(i) != -1) {
@@ -49,8 +48,6 @@ function setPositions() {
   }
   return positions;
 }
-
-// Call the setPositions function after the page is fully loaded
 
 cells = setPositions();
 for (var i = 1; i <= 90; i++) {
